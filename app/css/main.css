@@ -78,7 +78,7 @@ html.js .loader_inner {
 }
 
 body {
-	font-size: 18px;
+	font-size: 16px;
 	color: #333;	 
 	font-weight: 200;
 	min-width: 320px;
@@ -91,34 +91,19 @@ body {
 }
 
 h1 {
-	font-size: 46px;
-	font-family: 'Arvo Bold'; 
-	margin:0;
+	font-size: 48px;
+	color:#1d446c; 
 }
 h2 {
-	font-size: 30px;
-	font-weight: bold;
-	margin:0;
-	text-align: center;
-	margin-bottom: 50px;
-	position: relative;
-}
-h2:before {
-	content:"";
-	position: absolute;
-	width:103px;
-	height: 1px;
-	background: #333;
-	left:50%;
-	margin-left: -51.5px;
-	bottom:-15px;
-}
+	font-size: 40px;
+	color:#1d446c;  
+} 
 h3 {
 	font-size: 24px; 
 	margin:0;
 }
 h4 {
-	font-size: 18px;
+	font-size: 20px;
 	text-transform: uppercase;
 	margin:0;
 }
@@ -130,155 +115,4 @@ h5 {
 .hidden {
 	display: none;
 }
-
-a, a:focus {
-	text-decoration: none;
-}
  
-.section-margin-b {
-	margin-bottom: 80px;
-}
-/*Кнопка*/
-.btn-orange {
-	display:block;
-	border: none;
-	margin:0 auto;
-	width: 220px;
-	height: 51px;
-	background-color: #f93;
-	border-radius: 11px;
-	box-shadow:  0 3px 0 rgba(138, 82, 26, 0.76);
-	-webkit-box-shadow:  0 3px 0 rgba(138, 82, 26, 0.76);
-	-moz-box-shadow:  0 3px 0 rgba(138, 82, 26, 0.76); 
-	text-align: center;
-	line-height: 50px;
-	color: #fff;
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-.btn-orange:hover {
-	text-decoration: none;
-	color: #fff;
-	background-color: #E0872E;
-}
-.btn-orange:focus {
-	text-decoration: none;
-	color: #fff;
-	background-color: #E0872E;
-	box-shadow:  0 -3px 0 rgba(138, 82, 26, 0.76);
-	-webkit-box-shadow:  0 -3px 0 rgba(138, 82, 26, 0.76);
-	-moz-box-shadow:  0 -3px 0 rgba(138, 82, 26, 0.76); 
-	position: relative;
-	top:3px;
-}
-
-/*Облоажка для БГ*/
-.header-bg_overlay {
-		position: absolute;
-		width:100%;
-		height: 100%;
-		z-index:0;
-		background-color: rgba(0, 0, 0, 0.65);
-	}
-
-input, select {
-	width: 275px;
-	padding: 15px 12px;
-	-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		border-radius: 10px;
-		border: none;
-
-}
-input:focus, select:focus{
-	outline: none;
-	background-color: #FBE6D0;
-}
- 
-/*UI slider*/
-#price-slider{
-  width:100%;
-  height:100px;
-  font-size:18px;
-}
-
-#price-slider input{ 
-  width:120px;
-  display:inline-block;
-  font-size:18px;
-     padding: 15px 12px;
-}
-
-#slider-range{
-	position:relative;
-	margin: 15px 0 auto auto;
-	width:275px;
-	height:8px; 
-	background-color: #efdbc2;
-}
-
-
-#slider-range .ui-slider-handle {
-	position: absolute;
-	width:24px;
-	height:24px;
-	margin-top:-8px;
-	border:none;
-	background:#66cc99;
-	cursor: pointer;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-}	
-#slider-range .ui-slider-handle:focus{ 
-	outline: none;
-	background-color: #478C6A;
-}
-
-#slider-range .ui-slider-range{
-  background:red;
-} 
-
-/*#slider-range .ui-corner-all{
-  border-radius:0px;
-}*/
-
-.p-margin {
-	margin: 10px 0 !important;
-}
-.rotate-180 {
-	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg); 
-}
- 
-
-
-.priceRangeInfo{
-    position: relative;
-    height: 30px;
-    margin-top: 60px;
-}
-.priceRangeInfo label{
-    position: absolute;
-    top: -30px;
-    left: 10px;
-}                            /* moves label field */
-.priceRangeInfo #buying_slider_min{
-    top: -40px;
-    position: absolute;
-    left: 100px;
-}       /* moves first input field */ 
-.priceRangeInfo #buying_slider_max{
-    top: -40px;
-    position: absolute;
-    left: 170px;
-}      /* move second input field */ 
-.priceRangeInfo div.ui-slider{
-    position: absolute;
-}                   /* move both sliders - adressing 1st slider with CSS is hard */ 
-.priceRangeInfo div:last-child{
-    position: absolute;
-    left: 0px;
-}
