@@ -1,9 +1,10 @@
 "use sctrict";
 
 var gulp = require("gulp"),
-		connect = require("gulp-connect"),
+    autoprefixer = require('gulp-autoprefixer'),
+    connect = require("gulp-connect"), 
     less = require('gulp-less'), 
-		opn = require("opn");
+    opn = require("opn");
 
 // Запускаем локальный сервер
 gulp.task('connect', function() {
@@ -18,7 +19,8 @@ gulp.task('connect', function() {
 //LESS compiler
 gulp.task('less', function () {
   gulp.src('app/less/*.less')
-    .pipe(less())
+    .pipe(less()) 
+    .pipe(autoprefixer({ browsers: ["> 0%"] }))    
     .pipe(gulp.dest('app/css/'));
 });
 
