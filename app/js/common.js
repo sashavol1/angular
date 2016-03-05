@@ -1,24 +1,4 @@
-
-
-
-// preload
-	$(window).load(function() {
-
-		$(".loader_inner").fadeOut();
-		$(".loader").delay(400).fadeOut("slow");
-
-	});
-
-// меню
-	jQuery(function($){ 
-			$("#toggle").click(function(event) {
-			event.preventDefault();
-			$(this).toggleClass("on");
-			$("#menu").slideToggle();
-		});
-	});
  
-
 $(document).ready(function() { 
 	 
  	// плавный линк
@@ -71,6 +51,7 @@ $(document).ready(function() {
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
  
-	
+	// out SVG preload
+	$("#preload").fadeOut();	
 });
 

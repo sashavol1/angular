@@ -3,10 +3,11 @@
 var gulp = require("gulp"),
     autoprefixer = require('gulp-autoprefixer'),
     connect = require("gulp-connect"), 
-    less = require('gulp-less'), 
+    less = require('gulp-less'),     
+    cssc = require('gulp-css-condense'),
     opn = require("opn");
 
-// Запускаем локальный сервер
+// За
 gulp.task('connect', function() {
   connect.server({
     root: 'app',
@@ -15,6 +16,7 @@ gulp.task('connect', function() {
   });
   opn('http://localhost:8888');
 });
+
 
 //LESS compiler
 gulp.task('less', function () {
@@ -32,8 +34,15 @@ gulp.task('html', function () {
 
 // Работа с CSS
 gulp.task('css', function () {
-  gulp.src('app/css/*.css')    
+  gulp.src('app/css/*.css')  
+    .pipe(cssc({
+            consolidateViaDeclarations: true,
+            consolidateViaSelectors: false,
+            consolidateMediaQueries: true
+        }))  
+    .pipe(gulp.dest('app/css/'))
     .pipe(connect.reload());
+    
 });
 
 // Работа с JS

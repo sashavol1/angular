@@ -1,0 +1,106 @@
+*::-webkit-input-placeholder {
+	color: #333;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #333;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #333;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #333;
+	opacity: 1;
+}
+
+/* font-family: "OpenSansRegular"; */
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+} 
+/* font-family: "OpenSansBold"; */
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+} 
+/* font-family: "OpenSansSemiBold"; */
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+    src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+    url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+} 
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+.svg {
+	.preload {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		z-index: 9999;
+		background-image: url(../img/spinning-circles.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+body {
+	font-size: 15px;
+	color: #333;	 
+	min-width: 992px; 
+	line-height: 1.5;
+	font-family: "OpenSansRegular", sans-serif;
+	font-weight: normal;
+	overflow-x: hidden; 
+	a {
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+

@@ -5,7 +5,8 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat-css": "^2.2.0",
-    "gulp-connect": "^2.2.0",
+    "gulp-connect": "^2.2.0", 
+    "gulp-css-condense": "^1.1.2",
     "gulp-less": "^3.0.3",
     "opn": "^1.0.1"
   }
