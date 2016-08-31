@@ -1,0 +1,19 @@
+
+<h2>Список писем</h2>
+<table class="table table-default" ng-repeat="item in mailList">
+ <tr ng-if="mailCtrl.inbox" ng-repeat="el in item.inbox">
+    <td ><a href="">{{el.title}}</a></td>
+    <td >{{el.text}}</td>
+    <td >{{el.date}}</td>
+ </tr>
+ <tr ng-if="mailCtrl.sent" ng-repeat="el in item.sent">
+    <td ><a href="">{{el.title}}</a></td>
+    <td >{{el.text}}</td>
+    <td >{{el.date}}</td>
+ </tr>
+ <tr ng-if="mailCtrl.spam" ng-repeat="el in item.spam">
+    <td ><a href="">{{el.title}}</a></td>
+    <td >{{el.text}}</td>
+    <td >{{el.date}}</td>
+ </tr>
+</table>
