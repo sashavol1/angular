@@ -26,11 +26,10 @@
 
 </head>
 <body ng-controller="MailCtrl as mailCtrl">
-    <h1>1</h1>
 <navs-menu></navs-menu>
 <div class="container">
     <detail-list  ng-if="false"></detail-list>
-    <mail-list  ng-if="true"></mail-list>
+    <mail-list name="{{mailCtrl.dataSomeDifferent.name}}" ng-if="true"  ></mail-list>
 </div>
 <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
